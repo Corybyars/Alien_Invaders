@@ -9,12 +9,12 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Alien Invasion")
 
 # Images
-RED_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_red_small.png"))
-GREEN_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_green_small.png"))
+RED_SPACE_SHIP = pygame.image.load(os.path.join("assets", "red_ship_2.png"))
+GREEN_SPACE_SHIP = pygame.image.load(os.path.join("assets", "green_ship_2.png"))
 BLUE_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_blue_small.png"))
 
 # Player 
-YELLOW_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_yellow.png"))
+YELLOW_SPACE_SHIP = pygame.image.load(os.path.join("assets", "player_ship.png"))
 
 # Background
 BG = pygame.transform.scale(pygame.image.load(os.path.join("assets", "background-black.png")), (WIDTH, HEIGHT))
@@ -239,7 +239,7 @@ def main():
 		
 
 def main_menu():
-	title_font = pygame.font.SysFont("karmaticarcade", 70)
+	title_font = pygame.font.SysFont("karmaticarcade", 40)
 	run = True
 	while run:
 		WIN.blit(BG, (0,0))
